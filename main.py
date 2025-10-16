@@ -31,13 +31,13 @@ def generateMatrix(x,y,gap_cost,mismatch_cost):
 
     return matrix
 
+
 def printMatrix(matrix):
     print("Matrix:")
     # Find max width for formatting
     max_width = max(len(str(cell)) for row in matrix for cell in row)
     for row in matrix:
         print(' '.join(f"{str(cell):>{max_width}}" for cell in row))
-
 
 
 def findBestPathThruMatrix(matrix, x, y, gap_cost, mismatch_cost):
