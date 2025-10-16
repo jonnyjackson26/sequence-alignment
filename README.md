@@ -1,5 +1,5 @@
-# sequence-alignment
-This is project 5 for Analysis of Algorithms with Brian Knaeble
+# sequence-alignment (Needleman-Wunsch)
+This is project 5 for Analysis of Algorithms with Brian Knaeble. This uses *dynamic programming*
 
 From the website for the textbook complete Programming Problem 17.8: Sequence Alignment along with the reconstruction algorithm to print out your solution showing the optimally aligned sequences.
 
