@@ -30,7 +30,19 @@ def generateMatrix(x,y,gap_cost,mismatch_cost):
     for i in range(1,len(matrix)):
         for j in range(1,len(matrix[i])):
             #decide what number to put in
-            matrix[i][j]=9
+            x_character=x[i-1:i]
+            y_character=y[i-1:i]
+            #print(f"x: {x_character}, y: {y_character}")
+
+            diagonal=matrix[i-1][j-1]+1 #match #assuming 1 is the reward for matching characters
+            gap_on_x=matrix[i][j-1]+gap_cost    #pull down 
+            gap_on_y=matrix[i-1][j]+gap_cost    #pull down 
+
+            matrix[i][j]=min(diagonal, gap_on_x, gap_on_y)
+
+
+            
+            
 
     return matrix
 
