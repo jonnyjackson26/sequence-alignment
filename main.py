@@ -89,6 +89,8 @@ def findBestPathThruMatrix(matrix, x, y, gap_cost, mismatch_cost):
     print(y_alignment)
     print(f"Score: {totalAlignmentScore}")
 
+
+
 #main:
 x,y,gap_cost,mismatch_cost=readData('data.txt')
 print(f"Gap cost: {gap_cost}\nMismatch cost: {mismatch_cost}\nx: {x}\ny: {y}\n")
